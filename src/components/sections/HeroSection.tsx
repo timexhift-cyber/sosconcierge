@@ -5,7 +5,7 @@ export const HeroSection: React.FC = () => {
   return (
     <section className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-gray-900 to-black py-20 px-6 lg:px-20">
       <div className="w-full max-w-7xl mx-auto relative">
-        <nav className="absolute -top-16 right-0 flex items-center gap-4 lg:gap-6 max-md:static max-md:justify-center max-md:flex-wrap max-md:mb-8 max-sm:hidden">
+        <nav className="absolute -top-16 right-0 flex items-center gap-4 lg:gap-6 max-md:static max-md:justify-center max-md:flex-wrap max-md:mb-8 max-sm:hidden animate-fade-in">
           <a href="#home" className="text-white text-center text-base lg:text-lg font-light cursor-pointer hover:text-[#E0AE2E] transition-colors">
             Home
           </a>
@@ -20,13 +20,13 @@ export const HeroSection: React.FC = () => {
           </a>
         </nav>
 
-        <div className="flex flex-col items-center gap-6 lg:gap-8 max-w-4xl mx-auto">
+        <div className="flex flex-col items-center gap-6 lg:gap-8 max-w-4xl mx-auto animate-fade-in-up">
           <div className="flex flex-col items-center gap-4 lg:gap-6">
             <StarRating />
             <p className="text-white text-center text-sm lg:text-lg font-light tracking-wider">
               Menos tarefas. Mais vida.
             </p>
-            <h1 className="text-white text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal tracking-tight leading-tight">
+            <h1 className="font-aboreto text-white text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal tracking-tight leading-tight">
               Concierge premium, cuidamos de tudo para você focar no essencial.
             </h1>
           </div>

@@ -4,14 +4,14 @@ import { StarRating } from '../ui/StarRating';
 export const CTASection: React.FC = () => {
   return (
     <section className="flex justify-center items-center bg-gradient-to-br from-gray-900 to-black py-16 lg:py-24 px-6">
-      <div className="flex flex-col justify-center items-center gap-6 lg:gap-8 w-full max-w-2xl">
+      <div className="flex flex-col justify-center items-center gap-6 lg:gap-8 w-full max-w-2xl animate-fade-in-up">
         <StarRating size="small" />
         
         <p className="text-white text-center text-sm lg:text-base font-light tracking-widest">
           SUNNY ORGANIZATION SOLUTIONS
         </p>
         
-        <h2 className="text-white text-center text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
+        <h2 className="font-aboreto text-white text-center text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
           Viva a Experiência S.O.S
         </h2>
         

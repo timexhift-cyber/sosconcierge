@@ -3,12 +3,12 @@ import React from 'react';
 export const WellnessSection: React.FC = () => {
   return (
     <section className="flex justify-center items-start bg-[#222] py-16 lg:py-24 px-6 lg:px-20">
-      <div className="flex w-full max-w-7xl gap-8 lg:gap-12 items-start flex-col lg:flex-row">
+      <div className="flex w-full max-w-7xl gap-8 lg:gap-12 items-start flex-col lg:flex-row animate-fade-in-up">
         <div className="flex flex-1 flex-col items-start gap-6 lg:gap-8">
           <p className="text-[#E0AE2E] text-sm lg:text-base font-light tracking-widest">
             UMA INICIATIVA S.O.S
           </p>
-          <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
+          <h2 className="font-aboreto text-white text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
             S.O.S Wellness Club
           </h2>
           <p className="text-[#DFDFDF] text-base lg:text-lg font-light leading-relaxed">

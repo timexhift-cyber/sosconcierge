@@ -3,12 +3,12 @@ import React from 'react';
 export const TestimonialsSection: React.FC = () => {
   return (
     <section className="flex flex-col justify-center items-center gap-12 relative bg-gradient-to-br from-gray-900 to-black py-16 lg:py-24 px-6">
-      <div className="flex flex-col justify-center items-start gap-6 lg:gap-8 w-full max-w-4xl">
+      <div className="flex flex-col justify-center items-start gap-6 lg:gap-8 w-full max-w-4xl animate-fade-in-up">
         <p className="text-white text-sm lg:text-base font-light tracking-widest">
           DEPOIMENTOS
         </p>
         
-        <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
+        <h2 className="font-aboreto text-white text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
           Você sente a diferença no primeiro mês
         </h2>
         

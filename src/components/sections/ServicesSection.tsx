@@ -12,12 +12,12 @@ export const ServicesSection: React.FC = () => {
 
   return (
     <section className="flex flex-col justify-center items-center bg-[#F6F5EE] py-16 lg:py-24 px-6 lg:px-20">
-      <div className="flex w-full max-w-7xl flex-col items-start gap-8 lg:gap-12">
+      <div className="flex w-full max-w-7xl flex-col items-start gap-8 lg:gap-12 animate-fade-in-up">
         <div className="flex flex-col items-start gap-4 lg:gap-6">
           <p className="text-black text-lg lg:text-xl font-light">
             O que resolvemos por você
           </p>
-          <h2 className="text-black text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
+          <h2 className="font-aboreto text-black text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
             Serviços e Soluções
           </h2>
         </div>

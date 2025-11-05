@@ -5,9 +5,9 @@ export const FooterSection: React.FC = () => {
 
   return (
     <footer className="flex justify-center items-center bg-[#222] py-16 lg:py-20 px-6 lg:px-20">
-      <div className="flex w-full max-w-7xl justify-between items-start flex-col lg:flex-row gap-8 lg:gap-12">
+      <div className="flex w-full max-w-7xl justify-between items-start flex-col lg:flex-row gap-8 lg:gap-12 animate-fade-in-up">
         <div className="flex flex-1 flex-col items-start gap-6">
-          <h3 className="text-white text-2xl lg:text-3xl font-normal tracking-tight">
+          <h3 className="font-aboreto text-white text-2xl lg:text-3xl font-normal tracking-tight">
             Sobre a <span className="text-[#E0AE2E]">S.O.S</span>
           </h3>
           <p className="text-white text-base lg:text-lg font-light leading-relaxed">
@@ -16,7 +16,7 @@ export const FooterSection: React.FC = () => {
         </div>
         
         <div className="flex flex-1 flex-col items-start gap-6">
-          <h3 className="text-white text-2xl lg:text-3xl font-normal tracking-tight">
+          <h3 className="font-aboreto text-white text-2xl lg:text-3xl font-normal tracking-tight">
             Explorar
           </h3>
           <nav className="flex flex-col items-start gap-4">
@@ -33,7 +33,7 @@ export const FooterSection: React.FC = () => {
         </div>
         
         <div className="flex flex-1 flex-col items-start gap-6">
-          <h3 className="text-white text-2xl lg:text-3xl font-normal tracking-tight">
+          <h3 className="font-aboreto text-white text-2xl lg:text-3xl font-normal tracking-tight">
             Contato
           </h3>
           <div className="flex flex-col gap-3">
