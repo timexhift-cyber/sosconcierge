@@ -7,8 +7,8 @@ interface ServiceCardProps {
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({ title, className = '' }) => {
   return (
-    <div className={`flex w-[465px] h-[618px] flex-col justify-end items-start bg-[#452816] px-[42px] py-[65px] max-md:w-full max-md:h-[400px] max-sm:h-[300px] max-sm:px-5 max-sm:py-10 ${className}`}>
-      <h3 className="text-white text-4xl font-normal leading-[51px] tracking-[-1.2px]">
+    <div className={`flex w-full h-64 lg:h-80 flex-col justify-end items-start bg-[#452816] px-6 lg:px-8 py-8 lg:py-10 ${className}`}>
+      <h3 className="text-white text-xl lg:text-2xl font-normal tracking-tight">
         {title}
       </h3>
     </div>

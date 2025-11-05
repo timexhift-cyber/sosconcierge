@@ -11,18 +11,18 @@ export const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex h-[1618px] flex-col justify-center items-center bg-[#F6F5EE] px-[222px] py-[173px] max-md:h-auto max-md:px-10 max-md:py-20 max-sm:px-5 max-sm:py-[60px]">
-      <div className="flex w-[1476px] flex-col items-start gap-10 max-md:w-full">
-        <div className="flex w-[720px] flex-col items-start gap-10">
-          <p className="text-black text-2xl font-light leading-[35px] self-stretch">
+    <section className="flex flex-col justify-center items-center bg-[#F6F5EE] py-16 lg:py-24 px-6 lg:px-20">
+      <div className="flex w-full max-w-7xl flex-col items-start gap-8 lg:gap-12">
+        <div className="flex flex-col items-start gap-4 lg:gap-6">
+          <p className="text-black text-lg lg:text-xl font-light">
             O que resolvemos por você
           </p>
-          <h2 className="text-black text-5xl font-normal leading-[51px] tracking-[-1.2px] self-stretch max-sm:text-[28px] max-sm:leading-8">
+          <h2 className="text-black text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
             Serviços e Soluções
           </h2>
         </div>
         
-        <div className="flex items-start content-start gap-10 self-stretch flex-wrap max-md:gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
           {services.map((service, index) => (
             <ServiceCard key={index} title={service} />
           ))}

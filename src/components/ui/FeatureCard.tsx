@@ -8,12 +8,12 @@ interface FeatureCardProps {
 
 export const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, className = '' }) => {
   return (
-    <div className={`flex w-[462px] flex-col items-start gap-2.5 border bg-white px-[30px] py-7 border-solid border-[#B6B6B6] max-md:w-full max-sm:p-5 ${className}`}>
-      <div className="w-[83px] h-[83px] border mb-[30px] border-solid border-[#E0AE2E]" />
-      <h3 className="text-black text-[32px] font-normal leading-[51px] tracking-[-1.2px] self-stretch mb-[30px]">
+    <div className={`flex w-full flex-col items-start gap-4 border bg-white px-6 py-6 border-solid border-[#B6B6B6] ${className}`}>
+      <div className="w-16 h-16 border border-solid border-[#E0AE2E]" />
+      <h3 className="text-black text-xl lg:text-2xl font-normal tracking-tight">
         {title}
       </h3>
-      <p className="text-black text-xl font-light leading-[35px] self-stretch">
+      <p className="text-black text-base lg:text-lg font-light leading-relaxed">
         {description}
       </p>
     </div>
