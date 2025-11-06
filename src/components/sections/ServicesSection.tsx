@@ -1,14 +1,19 @@
 import React from 'react';
 import { ServiceCard } from '../ui/ServiceCard';
 import { Calendar, Plane, Home, Heart, Briefcase } from 'lucide-react';
+import serviceAgenda from '@/assets/service-agenda.jpg';
+import serviceTravel from '@/assets/service-travel.jpg';
+import serviceHome from '@/assets/service-home.jpg';
+import serviceWellness from '@/assets/service-wellness.jpg';
+import serviceExecutive from '@/assets/service-executive.jpg';
 
 export const ServicesSection: React.FC = () => {
   const services = [
-    { title: 'Gestão de Agenda', icon: Calendar },
-    { title: 'Viagens Premium', icon: Plane },
-    { title: 'Gestão Residencial', icon: Home },
-    { title: 'Bem-estar & Saúde', icon: Heart },
-    { title: 'Suporte Executivo', icon: Briefcase }
+    { title: 'Gestão de Agenda', icon: Calendar, image: serviceAgenda },
+    { title: 'Viagens Premium', icon: Plane, image: serviceTravel },
+    { title: 'Gestão Residencial', icon: Home, image: serviceHome },
+    { title: 'Bem-estar & Saúde', icon: Heart, image: serviceWellness },
+    { title: 'Suporte Executivo', icon: Briefcase, image: serviceExecutive }
   ];
 
   return (
@@ -25,7 +30,12 @@ export const ServicesSection: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
           {services.map((service, index) => (
-            <ServiceCard key={index} title={service.title} icon={service.icon} />
+            <ServiceCard 
+              key={index} 
+              title={service.title} 
+              icon={service.icon}
+              image={service.image}
+            />
           ))}
         </div>
       </div>
