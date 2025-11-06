@@ -1,31 +1,38 @@
 import React from 'react';
 import { FeatureCard } from '../ui/FeatureCard';
+import { Shield, Clock, Users, Lock, Award, Sparkles } from 'lucide-react';
 
 export const SpecialtiesSection: React.FC = () => {
   const specialties = [
     {
-      title: 'lOREM IPSUM',
-      description: 'Lorem ipsum dolor sit amet consectetur. Diam aliquam volutpat imperdiet vel nibh.'
+      title: 'Discrição Absoluta',
+      description: 'Sigilo total em todas as operações. Sua privacidade é nossa prioridade máxima em cada tarefa executada.',
+      icon: Shield
     },
     {
-      title: 'lOREM IPSUM',
-      description: 'Lorem ipsum dolor sit amet consectetur. Diam aliquam volutpat imperdiet vel nibh.'
+      title: 'Disponibilidade 24/7',
+      description: 'Atendimento contínuo para resolver suas demandas a qualquer hora, em qualquer lugar do mundo.',
+      icon: Clock
     },
     {
-      title: 'lOREM IPSUM',
-      description: 'Lorem ipsum dolor sit amet consectetur. Diam aliquam volutpat imperdiet vel nibh.'
+      title: 'Time Especializado',
+      description: 'Profissionais experientes e treinados para lidar com as mais diversas necessidades com excelência.',
+      icon: Users
     },
     {
-      title: 'lOREM IPSUM',
-      description: 'Lorem ipsum dolor sit amet consectetur. Diam aliquam volutpat imperdiet vel nibh.'
+      title: 'Segurança Garantida',
+      description: 'Processos rigorosos de verificação e protocolos de segurança em todas as etapas do serviço.',
+      icon: Lock
     },
     {
-      title: 'lOREM IPSUM',
-      description: 'Lorem ipsum dolor sit amet consectetur. Diam aliquam volutpat imperdiet vel nibh.'
+      title: 'Qualidade Premium',
+      description: 'Padrão de excelência em cada detalhe, superando expectativas e entregando resultados impecáveis.',
+      icon: Award
     },
     {
-      title: 'lOREM IPSUM',
-      description: 'Lorem ipsum dolor sit amet consectetur. Diam aliquam volutpat imperdiet vel nibh.'
+      title: 'Experiência Personalizada',
+      description: 'Soluções sob medida adaptadas ao seu estilo de vida e necessidades específicas.',
+      icon: Sparkles
     }
   ];
 
@@ -47,6 +54,7 @@ export const SpecialtiesSection: React.FC = () => {
               key={index}
               title={specialty.title}
               description={specialty.description}
+              icon={specialty.icon}
             />
           ))}
         </div>

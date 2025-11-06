@@ -29,29 +29,39 @@ export const WellnessSection: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 flex-1">
           <div className="flex flex-col">
-            <div className="w-full h-48 bg-[#D9D9D9]" />
+            <div className="w-full h-48 bg-[#D9D9D9] flex items-center justify-center">
+              <div className="text-center p-6">
+                <p className="text-[#452816] text-2xl font-semibold">Em Breve</p>
+                <p className="text-[#656565] text-base mt-2">Estamos trabalhando nesta funcionalidade</p>
+              </div>
+            </div>
             <div className="flex flex-col gap-4 bg-[#F6F5EE] px-5 py-6">
               <h3 className="text-black text-lg lg:text-xl font-normal tracking-tight">
-                Profissionais e espaços criteriosamente selecionados
+                Academias & Spas Premium
               </h3>
               <div className="flex flex-col gap-3">
-                <p className="text-[#656565] text-sm lg:text-base font-light">Lorem Ipsum</p>
-                <p className="text-[#656565] text-sm lg:text-base font-light">Lorem Ipsum</p>
-                <p className="text-[#656565] text-sm lg:text-base font-light">Lorem Ipsum</p>
+                <p className="text-[#656565] text-sm lg:text-base font-light">Rede exclusiva de parceiros</p>
+                <p className="text-[#656565] text-sm lg:text-base font-light">Agendamento facilitado</p>
+                <p className="text-[#656565] text-sm lg:text-base font-light">Acompanhamento dedicado</p>
               </div>
             </div>
           </div>
           
           <div className="flex flex-col">
-            <div className="w-full h-48 bg-[#D9D9D9]" />
+            <div className="w-full h-48 bg-[#D9D9D9] flex items-center justify-center">
+              <div className="text-center p-6">
+                <p className="text-[#452816] text-2xl font-semibold">Em Construção</p>
+                <p className="text-[#656565] text-base mt-2">Novidades em desenvolvimento</p>
+              </div>
+            </div>
             <div className="flex flex-col gap-4 bg-[#F6F5EE] px-5 py-6">
               <h3 className="text-black text-lg lg:text-xl font-normal tracking-tight">
-                Profissionais e espaços criteriosamente selecionados
+                Clínicas & Profissionais de Saúde
               </h3>
               <div className="flex flex-col gap-3">
-                <p className="text-[#656565] text-sm lg:text-base font-light">Lorem Ipsum</p>
-                <p className="text-[#656565] text-sm lg:text-base font-light">Lorem Ipsum</p>
-                <p className="text-[#656565] text-sm lg:text-base font-light">Lorem Ipsum</p>
+                <p className="text-[#656565] text-sm lg:text-base font-light">Profissionais qualificados</p>
+                <p className="text-[#656565] text-sm lg:text-base font-light">Gestão completa de consultas</p>
+                <p className="text-[#656565] text-sm lg:text-base font-light">Lembretes automáticos</p>
               </div>
             </div>
           </div>

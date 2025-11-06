@@ -1,22 +1,31 @@
 import React from 'react';
 import { StarRating } from '../ui/StarRating';
+import heroBackground from '@/assets/hero-background.png';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-gray-900 to-black py-20 px-6 lg:px-20">
-      <div className="w-full max-w-7xl mx-auto relative">
+    <section id="home" className="min-h-screen relative flex items-center justify-center py-20 px-6 lg:px-20 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroBackground} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 to-black/40" />
+      </div>
+      <div className="w-full max-w-7xl mx-auto relative z-10">
         <nav className="absolute -top-16 right-0 flex items-center gap-4 lg:gap-6 max-md:static max-md:justify-center max-md:flex-wrap max-md:mb-8 max-sm:hidden animate-fade-in">
           <a href="#home" className="text-white text-center text-base lg:text-lg font-light cursor-pointer hover:text-[#E0AE2E] transition-colors">
             Home
           </a>
           <a href="#about" className="text-white text-center text-base lg:text-lg font-light cursor-pointer hover:text-[#E0AE2E] transition-colors">
-            Lorem
+            Sobre
           </a>
           <a href="#services" className="text-white text-center text-base lg:text-lg font-light cursor-pointer hover:text-[#E0AE2E] transition-colors">
-            Ipsum
+            Serviços
           </a>
           <a href="#contact" className="text-white text-center text-base lg:text-lg font-light cursor-pointer hover:text-[#E0AE2E] transition-colors">
-            Lorem ipsum
+            Contato
           </a>
         </nav>
 

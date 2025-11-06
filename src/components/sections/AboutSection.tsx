@@ -3,7 +3,7 @@ import { StarRating } from '../ui/StarRating';
 
 export const AboutSection: React.FC = () => {
   return (
-    <section className="flex justify-center items-center bg-white py-16 lg:py-24 px-6 lg:px-20">
+    <section id="about" className="flex justify-center items-center bg-white py-16 lg:py-24 px-6 lg:px-20">
       <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-8 lg:gap-12 animate-fade-in-up">
         <div className="flex-1 flex flex-col items-start gap-6 lg:gap-8">
           <StarRating size="small" />

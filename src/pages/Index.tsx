@@ -5,9 +5,10 @@ import { ServicesSection } from '../components/sections/ServicesSection';
 import { WellnessSection } from '../components/sections/WellnessSection';
 import { CTASection } from '../components/sections/CTASection';
 import { SpecialtiesSection } from '../components/sections/SpecialtiesSection';
-import { TestimonialsSection } from '../components/sections/TestimonialsSection';
+import { TestimonialsCarousel } from '../components/sections/TestimonialsCarousel';
 import { FeaturesSection } from '../components/sections/FeaturesSection';
 import { FooterSection } from '../components/sections/FooterSection';
+import { WhatsAppButton } from '../components/ui/WhatsAppButton';
 
 const Index = () => {
   return (
@@ -18,9 +19,10 @@ const Index = () => {
       <WellnessSection />
       <CTASection />
       <SpecialtiesSection />
-      <TestimonialsSection />
+      <TestimonialsCarousel />
       <FeaturesSection />
       <FooterSection />
+      <WhatsAppButton />
     </main>
   );
 };

@@ -1,10 +1,19 @@
 import React from 'react';
 import { StarRating } from '../ui/StarRating';
+import ctaBackground from '@/assets/cta-background.png';
 
 export const CTASection: React.FC = () => {
   return (
-    <section className="flex justify-center items-center bg-gradient-to-br from-gray-900 to-black py-16 lg:py-24 px-6">
-      <div className="flex flex-col justify-center items-center gap-6 lg:gap-8 w-full max-w-2xl animate-fade-in-up">
+    <section className="flex justify-center items-center relative py-16 lg:py-24 px-6 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={ctaBackground} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
+      <div className="flex flex-col justify-center items-center gap-6 lg:gap-8 w-full max-w-2xl animate-fade-in-up relative z-10">
         <StarRating size="small" />
         
         <p className="text-white text-center text-sm lg:text-base font-light tracking-widest">

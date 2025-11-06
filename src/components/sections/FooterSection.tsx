@@ -1,10 +1,15 @@
 import React from 'react';
 
 export const FooterSection: React.FC = () => {
-  const navigationLinks = ['Home', 'Sobre', 'Serviços', 'Produtos', 'Contato'];
+  const navigationLinks = [
+    { name: 'Home', href: '#home' },
+    { name: 'Sobre', href: '#about' },
+    { name: 'Serviços', href: '#services' },
+    { name: 'Contato', href: '#contact' }
+  ];
 
   return (
-    <footer className="flex justify-center items-center bg-[#222] py-16 lg:py-20 px-6 lg:px-20">
+    <footer id="contact" className="flex justify-center items-center bg-[#222] py-16 lg:py-20 px-6 lg:px-20">
       <div className="flex w-full max-w-7xl justify-between items-start flex-col lg:flex-row gap-8 lg:gap-12 animate-fade-in-up">
         <div className="flex flex-1 flex-col items-start gap-6">
           <h3 className="font-aboreto text-white text-2xl lg:text-3xl font-normal tracking-tight">
@@ -23,10 +28,10 @@ export const FooterSection: React.FC = () => {
             {navigationLinks.map((link, index) => (
               <a
                 key={index}
-                href={`#${link.toLowerCase()}`}
+                href={link.href}
                 className="text-white text-base lg:text-lg font-light cursor-pointer hover:text-[#E0AE2E] transition-colors"
               >
-                {link}
+                {link.name}
               </a>
             ))}
           </nav>
