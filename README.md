@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+Aqui está uma versão autoral e profissional do README adaptada para a sua empresa Avanceo, sem referências ao avanceo, e com uma linguagem clara e institucional:
 
-## Project info
+🚀 Projeto Avanceo
+📖 Sobre o projeto
 
-**URL**: https://lovable.dev/projects/f53cc80b-584c-4722-b4c8-ca9001631358
+Este é um projeto desenvolvido pela Avanceo, com foco em performance, design limpo e tecnologia moderna.
+A aplicação foi construída utilizando as melhores práticas de desenvolvimento front-end, priorizando velocidade, escalabilidade e experiência do usuário.
 
-## How can I edit this code?
+🧩 Tecnologias utilizadas
 
-There are several ways of editing your application.
+O projeto foi desenvolvido com base em um stack moderno e eficiente:
 
-**Use Lovable**
+Vite — Build tool ultrarrápida para projetos modernos em JavaScript e TypeScript.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f53cc80b-584c-4722-b4c8-ca9001631358) and start prompting.
+TypeScript — Superset do JavaScript que adiciona tipagem estática e maior robustez ao código.
 
-Changes made via Lovable will be committed automatically to this repo.
+React — Biblioteca para criação de interfaces de usuário reativas e componentizadas.
 
-**Use your preferred IDE**
+Tailwind CSS — Framework CSS utilitário para construção de interfaces responsivas e elegantes.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+shadcn/ui — Biblioteca de componentes estilizados e acessíveis para React.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+💻 Como rodar o projeto localmente
 
-Follow these steps:
+Siga os passos abaixo para executar o projeto em ambiente de desenvolvimento:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clone este repositório
+git clone <URL_DO_SEU_REPOSITORIO>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Acesse o diretório do projeto
+cd <NOME_DO_PROJETO>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Inicie o servidor de desenvolvimento
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Após isso, o projeto estará disponível localmente (geralmente em http://localhost:5173).
 
-**Use GitHub Codespaces**
+🧠 Estrutura e filosofia
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+O projeto segue uma estrutura modular e clara, visando escalabilidade e fácil manutenção.
+Todos os componentes são pensados para reutilização, consistência visual e ótima performance.
 
-## What technologies are used for this project?
+🌐 Deploy e publicação
 
-This project is built with:
+Para colocar o projeto no ar, basta realizar o build de produção:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+npm run build
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/f53cc80b-584c-4722-b4c8-ca9001631358) and click on Share -> Publish.
+Em seguida, é possível hospedar os arquivos gerados na pasta dist em qualquer serviço de hospedagem estática, como:
 
-## Can I connect a custom domain to my Lovable project?
+Vercel
 
-Yes, you can!
+Netlify
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Cloudflare Pages
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+AWS Amplify
+
+GitHub Pages
+
+🏷️ Sobre a Avanceo
+
+A Avanceo é uma empresa focada em tecnologia, cultura e desenvolvimento de soluções digitais com propósito.
+Acreditamos no poder da inovação e no significado por trás de cada projeto.
