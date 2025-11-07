@@ -10,13 +10,13 @@ export const SpecialtiesSection: React.FC = () => {
       icon: Shield
     },
     {
-      title: 'Disponibilidade 24/7',
-      description: 'Atendimento contínuo para resolver suas demandas a qualquer hora, em qualquer lugar do mundo.',
+      title: 'Atendimento Sob Agendamento',
+      description: 'Agendamento prévio para garantir disponibilidade total e qualidade premium no atendimento às suas necessidades.',
       icon: Clock
     },
     {
       title: 'Time Especializado',
-      description: 'Profissionais experientes e treinados para lidar com as mais diversas necessidades com excelência.',
+      description: 'Profissionais treinados para lidar com as mais diversas necessidades com excelência e dedicação.',
       icon: Users
     },
     {
@@ -33,6 +33,11 @@ export const SpecialtiesSection: React.FC = () => {
       title: 'Experiência Personalizada',
       description: 'Soluções sob medida adaptadas ao seu estilo de vida e necessidades específicas.',
       icon: Sparkles
+    },
+    {
+      title: 'Plano 24/7 Premium',
+      description: 'Para clientes que precisam de suporte contínuo, oferecemos disponibilidade total em nosso plano mais completo.',
+      icon: Award
     }
   ];
 

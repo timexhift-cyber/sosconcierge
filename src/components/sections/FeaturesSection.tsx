@@ -29,34 +29,35 @@ export const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex justify-center items-center bg-white py-16 lg:py-24 px-6 lg:px-20">
-      <div className="flex w-full max-w-7xl flex-col items-start gap-0">
+    <section className="flex justify-center items-center bg-[#F6F5EE] py-16 lg:py-24 px-6 lg:px-20">
+      <div className="flex w-full max-w-7xl flex-col items-start gap-16 lg:gap-24">
         {features.map((feature, index) => (
           <div 
             key={index} 
-            className={`flex items-center self-stretch animate-fade-in-up ${
-              feature.imagePosition === 'right' ? 'flex-col-reverse lg:flex-row-reverse' : 'flex-col-reverse lg:flex-row'
+            className={`flex items-stretch self-stretch animate-fade-in-up gap-8 lg:gap-12 ${
+              feature.imagePosition === 'right' ? 'flex-col lg:flex-row-reverse' : 'flex-col lg:flex-row'
             }`}
           >
-            <div className="flex-1 h-full">
+            <div className="flex-1 overflow-hidden">
               <img
                 src={feature.image}
                 alt={feature.heading}
-                className="w-full h-full min-h-[400px] lg:min-h-[500px] object-cover"
+                className="w-full h-full min-h-[350px] lg:min-h-[450px] object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="flex-1 flex justify-center items-center bg-[#F6F5EE] py-12 lg:py-16 px-6 lg:px-12 min-h-[400px] lg:min-h-[500px]">
-              <div className="flex flex-col gap-6 lg:gap-8 max-w-lg">
-                <p className="text-black text-sm lg:text-base font-light tracking-widest">
+            <div className="flex-1 flex flex-col justify-center items-start gap-6 lg:gap-8">
+              <div className="flex flex-col gap-4">
+                <p className="text-[#E0AE2E] text-xs lg:text-sm font-light tracking-[0.2em] uppercase">
                   {feature.title}
                 </p>
-                <h3 className="font-aboreto text-black text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
+                <h3 className="font-aboreto text-black text-3xl md:text-4xl lg:text-5xl font-normal tracking-tight leading-tight">
                   {feature.heading}
                 </h3>
-                <p className="text-black text-base lg:text-lg font-light leading-relaxed">
-                  {feature.description}
-                </p>
               </div>
+              <p className="text-[#4C4C4C] text-base lg:text-lg font-light leading-relaxed">
+                {feature.description}
+              </p>
+              <div className="h-1 w-20 bg-[#E0AE2E] mt-2"></div>
             </div>
           </div>
         ))}

@@ -18,10 +18,10 @@ export const WellnessSection: React.FC = () => {
           <div className="flex items-center gap-4 mt-4">
             <div className="flex flex-col">
               <p className="text-white text-sm lg:text-base font-normal">
-                Ligue agora
+                Chame agora
               </p>
-              <a href="tel:+5511969752460" className="text-[#E0AE2E] text-lg lg:text-xl font-normal hover:underline">
-                +55 11 96975-2460
+              <a href="https://wa.me/5511940512450" target="_blank" rel="noopener noreferrer" className="text-[#E0AE2E] text-lg lg:text-xl font-normal hover:underline">
+                11 94051-2450
               </a>
             </div>
           </div>

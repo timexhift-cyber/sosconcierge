@@ -1,5 +1,6 @@
 import React from 'react';
 import { StarRating } from '../ui/StarRating';
+import aboutHero from '@/assets/about-hero.png';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -28,25 +29,20 @@ export const AboutSection: React.FC = () => {
           <div className="flex items-center gap-4 mt-4">
             <div className="flex flex-col">
               <p className="text-black text-sm lg:text-base font-normal">
-                Ligue agora
+                Chame agora
               </p>
-              <a href="tel:+5511969752460" className="text-[#E0AE2E] text-lg lg:text-xl font-normal hover:underline">
-                +55 11 96975-2460
+              <a href="https://wa.me/5511940512450" target="_blank" rel="noopener noreferrer" className="text-[#E0AE2E] text-lg lg:text-xl font-normal hover:underline">
+                11 94051-2450
               </a>
             </div>
           </div>
         </div>
         
-        <div className="flex-1 grid grid-cols-2 gap-4 lg:gap-6 max-sm:grid-cols-1">
+        <div className="flex-1">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/2e2257d678c611c41fd31a244d0d8fb8e01bba46?width=692"
-            alt="Concierge service professional"
-            className="w-full h-64 lg:h-80 object-cover"
-          />
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/048a58ce12021aab60f556ca78e6d4c3c8580763?width=692"
-            alt="Premium lifestyle services"
-            className="w-full h-64 lg:h-80 object-cover"
+            src={aboutHero}
+            alt="Concierge premium service"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>

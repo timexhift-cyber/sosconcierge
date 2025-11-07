@@ -1,16 +1,16 @@
 import React from 'react';
 import { ServiceCard } from '../ui/ServiceCard';
-import { Calendar, Plane, Home, Heart, Briefcase } from 'lucide-react';
+import { Calendar, FileText, Home, Heart, Briefcase } from 'lucide-react';
 import serviceAgenda from '@/assets/service-agenda.jpg';
-import serviceTravel from '@/assets/service-travel.jpg';
 import serviceHome from '@/assets/service-home.jpg';
 import serviceWellness from '@/assets/service-wellness.jpg';
 import serviceExecutive from '@/assets/service-executive.jpg';
+import serviceFinancialAdmin from '@/assets/service-financial-admin.jpg';
 
 export const ServicesSection: React.FC = () => {
   const services = [
     { title: 'Gestão de Agenda', icon: Calendar, image: serviceAgenda },
-    { title: 'Viagens Premium', icon: Plane, image: serviceTravel },
+    { title: 'Gestão Administrativa e Financeira Pessoal', icon: FileText, image: serviceFinancialAdmin },
     { title: 'Gestão Residencial', icon: Home, image: serviceHome },
     { title: 'Bem-estar & Saúde', icon: Heart, image: serviceWellness },
     { title: 'Suporte Executivo', icon: Briefcase, image: serviceExecutive }
@@ -21,7 +21,7 @@ export const ServicesSection: React.FC = () => {
       <div className="flex w-full max-w-7xl flex-col items-start gap-8 lg:gap-12 animate-fade-in-up">
         <div className="flex flex-col items-start gap-4 lg:gap-6">
           <p className="text-black text-lg lg:text-xl font-light">
-            O que resolvemos por você
+            O que resolvemos por você (sob agendamento para melhor disponibilidade)
           </p>
           <h2 className="font-aboreto text-black text-2xl md:text-3xl lg:text-4xl font-normal tracking-tight">
             Serviços e Soluções
